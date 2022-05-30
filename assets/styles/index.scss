@@ -35,7 +35,7 @@ a {
     font-family: 'font1';
     font-size: 0.7rem;
     letter-spacing: 1px;
-    padding: 10px 35px;
+    padding: 12px 39px;
 }
 
 header {
@@ -70,7 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    padding: 30px 15px;
+    
     background: rgba(255, 255, 255, 0.355);
     color: white;
     position: absolute;
@@ -83,32 +83,104 @@ header {
         justify-content: space-between;
         text-transform: uppercase;
         font-size: 0.7rem;
-        letter-spacing: 1px;
+        letter-spacing: 1.5px;
+        height: 100%;
+    }
+    & li{
+      padding: 25px 10px;
+      cursor: pointer;
     }
     }
     & .right-elements {
       color: white;
       width: 25%;
+      
       & ul {
         display: flex;
+        
         flex-direction: row;
         justify-content: space-between;
+        
         & li {
           width: 100%;
+          cursor: pointer;
+          padding: 25px 15px;
           margin-left: 10px;
-          text-align: right;
+          text-align: center;
+          
         }
       }
     }
   }
 }
-
+nav li:hover {
+  color: rgb(28, 28, 28);
+  background: white;
+}
 
 .section-1 {
   @include center();
   background: white;
   flex-direction: column;
   width: 70%;
-  margin: 0 auto;;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(220, 220, 220);
 }
 
+.date {
+  font-family: 'font2';
+  padding: 25px 0px;
+  
+  p {
+    position: relative;
+    &::before {
+      content: "";
+      width: 300px;
+      height: 1px;
+      position: absolute;
+      background: rgba(188, 188, 188, 0.816);
+      right: 165px;
+      top: 50%;
+      bottom: 50%;
+    }
+    &::after {
+      content: "";
+      width: 300px;
+      height: 1px;
+      position: absolute;
+      background: rgba(188, 188, 188, 0.816);
+      left: 165px;
+      top: 50%;
+      bottom: 50%;
+    }
+  }
+}
+
+.section1-title {
+  width: 60%;
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    padding: 40px 0px 0px;
+    letter-spacing: 2px;
+  }
+  p {
+    font-family: 'font2';
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 40px 0;
+    font-style: italic;
+    line-height: 28px;
+  }
+}
+
+.section1-img {
+  width: 80%;
+  height: 535px;
+  background: url(../img/images/pic01.jpg) center/cover;
+}
+
+.section1-button {
+  padding: 50px 0px 100px;
+}
