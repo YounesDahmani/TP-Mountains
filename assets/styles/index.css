@@ -240,4 +240,69 @@ nav li:hover {
 .section1-button {
   padding: 50px 0px 100px;
 }
+
+.section-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+}
+
+.left-section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 50%;
+  border-right: 1px solid gainsboro;
+}
+
+.left-section2-container {
+  width: 80%;
+  text-align: center;
+}
+
+.left-section2-container h5 {
+  font-family: 'font2';
+  font-size: 0.8rem;
+  padding: 60px 0px 23px;
+}
+
+.left-section2-container h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  padding-bottom: 23px;
+}
+
+.left-section2-container p {
+  padding: 37px 0px;
+  font-family: 'font2';
+  text-align: left;
+  line-height: 30px;
+  font-size: 0.8rem;
+}
+
+.left-img {
+  width: 100%;
+  height: 269px;
+  background: url(../img/images/pic02.jpg) center/cover;
+}
+
+.left-part-btn {
+  padding-bottom: 35px;
+}
 /*# sourceMappingURL=index.css.map */

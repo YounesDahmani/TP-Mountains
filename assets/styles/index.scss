@@ -184,3 +184,50 @@ nav li:hover {
 .section1-button {
   padding: 50px 0px 100px;
 }
+.section-2 {
+  @include center();
+  width: 70%;
+  margin: 0 auto;
+  background: white;
+}
+
+.left-section2 {
+  @include center();
+  min-width: 50%;
+  border-right: 1px solid rgb(220, 220, 220);
+}
+
+.left-section2-container {
+  width: 80%;
+  text-align: center;
+  h5 {
+    font-family: 'font2';
+    font-size: 0.8rem;
+    padding: 60px 0px 23px;
+  
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    padding-bottom: 23px;
+  }
+  p {
+    padding: 37px 0px;
+    font-family: 'font2';
+    text-align: left;
+    line-height: 30px;
+    font-size: 0.8rem;
+  }
+
+}
+
+.left-img {
+  width: 100%;
+  height: 269px;
+  background: url(../img/images/pic02.jpg) center/cover;
+}
+
+.left-part-btn {
+  padding-bottom: 35px;
+}
