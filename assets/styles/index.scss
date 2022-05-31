@@ -11,6 +11,30 @@
     align-items: center;
     justify-content: center;
 }
+@mixin font-style-2 {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: rgb(101, 101, 101);
+}
+@mixin footer-grid-template {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  @include font-style-2();
+  border-bottom: 1px solid rgb(198, 198, 198);
+  h3 {
+    text-align: center;
+    position: relative;
+  }
+  h4 {
+    font-family: 'font2';
+    line-height: 25px;
+    text-align: left;
+    text-transform: none;
+    
+  }
+}
 * {
     margin: 0;
     padding: 0;
@@ -291,7 +315,7 @@ footer {
 }
 .footer-left {
   min-width: 50%;
-  border-right: 1px solid rgb(101, 101, 101);
+  border-right: 1px solid rgb(198, 198, 198);
 }
 form {
   width: 80%;
@@ -307,14 +331,11 @@ form {
 .formulaire {
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: 25% 25% 50%;
+grid-template-rows: 20% 20% 60%;
 max-width: 600px;
 }
 label {
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  color: rgb(101, 101, 101);
+  @include font-style-2();
 }
 input[type="text"],
 textarea {
@@ -328,7 +349,7 @@ textarea {
 }
 input[type="text"]:focus,
 textarea:focus {
-  border: 2px solid grey;
+  border: 2px solid rgb(101, 101, 101);
   background: white;
 }
 
@@ -336,4 +357,46 @@ textarea {
   resize: none;
   height: 180px;
   
+}
+
+.right-footer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.address {
+  @include footer-grid-template();
+}
+
+.phone {
+  @include footer-grid-template();
+}
+
+.mail {
+  @include footer-grid-template();
+}
+
+.social {
+  @include footer-grid-template();
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+
+  }
+  li {
+    margin-right: 15px;
+  }
+  i {
+    color: rgb(35, 35, 35);
+    font-size: 1rem;
+    border: 1px solid rgb(198, 198, 198) ;
+    padding: 12px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+  }
 }

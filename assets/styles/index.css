@@ -375,7 +375,7 @@ footer {
 
 .footer-left {
   min-width: 50%;
-  border-right: 1px solid #656565;
+  border-right: 1px solid #c6c6c6;
 }
 
 form {
@@ -393,14 +393,14 @@ form {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  -ms-grid-rows: 25% 25% 50%;
-      grid-template-rows: 25% 25% 50%;
+  -ms-grid-rows: 20% 20% 60%;
+      grid-template-rows: 20% 20% 60%;
   max-width: 600px;
 }
 
 label {
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   letter-spacing: 2px;
   color: #656565;
 }
@@ -419,12 +419,155 @@ textarea {
 
 input[type="text"]:focus,
 textarea:focus {
-  border: 2px solid grey;
+  border: 2px solid #656565;
   background: white;
 }
 
 textarea {
   resize: none;
   height: 180px;
+}
+
+.right-footer {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.address {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: #656565;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.address h3 {
+  text-align: center;
+  position: relative;
+}
+
+.address h4 {
+  font-family: 'font2';
+  line-height: 25px;
+  text-align: left;
+  text-transform: none;
+}
+
+.phone {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: #656565;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.phone h3 {
+  text-align: center;
+  position: relative;
+}
+
+.phone h4 {
+  font-family: 'font2';
+  line-height: 25px;
+  text-align: left;
+  text-transform: none;
+}
+
+.mail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: #656565;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.mail h3 {
+  text-align: center;
+  position: relative;
+}
+
+.mail h4 {
+  font-family: 'font2';
+  line-height: 25px;
+  text-align: left;
+  text-transform: none;
+}
+
+.social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: #656565;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+.social h3 {
+  text-align: center;
+  position: relative;
+}
+
+.social h4 {
+  font-family: 'font2';
+  line-height: 25px;
+  text-align: left;
+  text-transform: none;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+}
+
+.social li {
+  margin-right: 15px;
+}
+
+.social i {
+  color: #232323;
+  font-size: 1rem;
+  border: 1px solid #c6c6c6;
+  padding: 12px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=index.css.map */
