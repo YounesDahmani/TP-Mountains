@@ -2,125 +2,96 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Montagne</title>
 
-    <title>Mountains</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
 </head>
 
 <body>
     <header>
-        <div class="header-title">
+        <div class="header-content">
             <h1>la montagne<br>ça vous gagne</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo
-                laboriosam perferendis, veritatis doloremque sapiente.
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius aspernatur deleniti repudiandae iure esse
+                quam?
             </p>
-            <div class="arrow-header">
-                <i class="fa-solid fa-circle-arrow-down"></i>
-            </div>
+            <span><a href="#main"><i class="fa-solid fa-arrow-down"></i></a></span>
         </div>
         <nav>
-            <div class="left-elements">
-                <ul>
-                    <li>this is massively</li>
-                    <li>generic page</li>
-                    <li>elements reference</li>
-                </ul>
-            </div>
-            <div class="right-elements">
-                <ul>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-facebook-f"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-github"></i></li>
-                </ul>
-            </div>
+            <ul class="nav-left">
+                <li>this is massively</li>
+                <li>generic page</li>
+                <li>elements reference</li>
+            </ul>
+            <ul class="nav-right">
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+            </ul>
         </nav>
     </header>
-    <section class="section-1">
-        <div class="date">
-            <p>April 25, 2017</p>
-        </div>
-        <div class="section1-title">
-            <h2>and this is a<br>massive headline</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-                incidunt officia consectetur sed molestiae nisi eos? Ab, laudantium
-                accusamus exercitationem a omnis aspernatur odit porro.
-            </p>
-        </div>
-        <div class="section1-img"></div>
-        <div class="section1-button">
-            <a href="#" class="btn">full story</a>
-        </div>
-    </section>
 
-    <section class="section-2">
-        <div class="left-section2">
-            <div class="left-section2-container">
-                <h5>April 24, 2017</h5>
-                <h3>sed magna </br> ipsum faucibus</h3>
-                <div class="left-img">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium facere sed, doloribus
-                    aperiam aliquid in corrupti incidunt saepe sint ad distinctio.</p>
-                <div class="left-part-btn">
-                    <a href="#" class="btn">Full story</a></div>
+    <main id="main">
+        <section class="section1">
+            <span>April 25, 2017</span>
+            <h2>and this is a <br>massive headline</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil debitis quisquam, ipsa voluptate amet
+                voluptatum dolores numquam impedit illo sequi asperiores deleniti beatae? Illum, voluptatibus?</p>
+            <img src="./assets/img/pic01.jpg" alt="img-hiking">
+            <button class="btn">full story</button>
             </div>
-        </div>
+        </section>
 
-        <div class="right-section2">
-            <div class="right-section2-container">
-                <h5>April 22, 2017</h5>
-                <h3>primis eget </br> imperdiet lorem</h3>
-                <div class="right-img">
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium facere sed, doloribus
-                    aperiam aliquid in corrupti incidunt saepe sint ad distinctio.</p>
-                <div class="right-part-btn">
-                    <a href="#" class="btn">Full story</a></div>
+        <section class="section2">
+            <div class="left-part">
+                <span>April 24, 2017</span>
+                <h3>sed magna<br>ipsum faucibus</h3>
+                <img src="./assets/img/pic02.jpg" alt="forest">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil fuga quia voluptate laudantium
+                    dignissimos incidunt praesentium ipsam officiis laborum.</p>
+                <button class="btn">full story</button>
             </div>
-        </div>
-    </section>
+            <div class="right-part">
+                <span>April 22, 2017</span>
+                <h3>primis eget<br>imperdiet lorem</h3>
+                <img src="./assets/img/pic03.jpg" alt="forest">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil fuga quia voluptate laudantium
+                    dignissimos incidunt praesentium ipsam officiis laborum.</p>
+                <button class="btn">full story</button>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="footer-left">
-            <form action="#">
-                <div class="formulaire">
-                    <div class="name">
-                        <label for="name">name</label>
-                        <input type="text" id="name">
-                    </div>
-                    <div class="email">
-                        <label for="email">email</label>
-                        <input type="text" id="email">
-                    </div>
-                    <div class="message">
-                        <label for="message">message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-                <input type="submit" class="btn" value="Send Message" />
-            </form>
-        </div>
-        <div class="right-footer">
-            <div class="address">
+        <form action="">
+            <label for="name">name</label>
+            <input type="text" id="name" autocomplete="off">
+            <label for="email">email</label>
+            <input type="text" id="email">
+            <label for="message">message</label>
+            <textarea id="message"></textarea>
+            <div class="submit-container">
+                <input type="submit" class="btn" value="send message">
+            </div>
+        </form>
+        <div class="infos-contact">
+            <div>
                 <h3>address</h3>
-                <h4>1234 Somewhere Road #87257<br>Nashville, TN 000000-0000</h4>
+                <p><br>1234 Somewhere Road #87257<br>Nashville, TN 00000-0000</p>
             </div>
-            <div class="phone">
+            <div>
                 <h3>phone</h3>
-                <h4>(000) 000-0000</h4>
+                <p>(000) 000-0000</p>
             </div>
-            <div class="mail">
+            <div>
                 <h3>email</h3>
-                <h4>info@untitled.ltd</h4>
+                <p>info@untitled.ltd</p>
             </div>
             <div class="social">
                 <h3>social</h3>
